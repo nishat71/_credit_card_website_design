@@ -1,0 +1,2154 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-color: var(--bg1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    /* color: transparent; */
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+}
+
+/* header-nav start from here */
+._credit_logo {
+    max-width: 148px;
+}
+
+._credit_header_nav_wrapper {
+    padding: 15px 0;
+    border-bottom: 2px solid var(--bg3);
+}
+
+._credit_header_nav_wrapper_list {
+    margin: 0 auto;
+}
+
+
+._credit_header_nav_wrapper_item {
+    margin-right: 32px;
+}
+._credit_header_nav_wrapper_item_link._active_link {
+    color: var(--color3) !important;
+}
+._credit_header_nav_wrapper_item_link {
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: right;
+    letter-spacing: -0.5px;
+    color: var(--color1) !important;
+    transition: .2s all ease;
+    position: relative;
+}
+
+._credit_header_nav_wrapper_item_link::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: var(--color2);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .2s all ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+._credit_header_nav_wrapper_item_link:hover::after {
+    visibility: visible;
+    opacity: 1;
+}
+
+._credit_header_nav_wrapper_item_link:hover,
+._credit_header_nav_login:hover {
+    color: var(--color2) !important;
+}
+
+._credit_header_nav_form_btn {
+    display: flex;
+    align-items: center;
+}
+
+._credit_header_nav_login {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    color: var(--color1);
+    margin-right: 32px;
+    transition: .2s all ease-in;
+}
+
+._credit_header_nav_btn {
+    width: 154px;
+    height: 50px;
+    font-family: 'Work Sans';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color3) !important;
+    background: var(--bg4) !important;
+    border: 0;
+    border-radius: 4px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s all ease-in-out;
+}
+
+._credit_header_nav_btn::before {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 100%;
+    background-color: var(--color2);
+    z-index: -1;
+    top: 0;
+    left: 0;
+    border-radius: 4px;
+    transition: .2s all ease-in-out;
+}
+
+._credit_header_nav_btn:hover::before {
+    width: 100%;
+}
+
+._credit_header_nav_btn:hover {
+    color: var(--color3) !important;
+}
+
+/* header herosection start from here */
+._credit_header_wrap {
+    /* padding: 140px 0; */
+    padding-top: 94px;
+}
+
+._credit_header_details_title {
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 1.2;
+    color: var(--color3);
+    max-width: 100%;
+    margin-bottom: 12px;
+}
+
+._credit_header_details_para {
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: -0.5px;
+    color: var(--color1);
+    max-width: 62%;
+    margin-bottom: 60px;
+}
+
+._credit_header_details_btn_link {
+    width: 184px;
+    height: 60px;
+    font-family: 'Work Sans';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color3) !important;
+    background-color: var(--bg4) !important;
+    border: 0;
+    border-radius: 12px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s all ease-in-out;
+}
+
+._credit_header_details_btn_link::before,
+._credit_features_4_content_btn::before {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 100%;
+    color: var(--color3) !important;
+    background-color: var(--color2) !important ;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    border-radius: 12px;
+    transition: .3s all ease-in-out;
+}
+
+._credit_header_details_btn_link:hover::before,
+._credit_features_4_content_btn:hover::before {
+    width: 100%;
+}
+
+._credit_header_details_btn_link:hover,
+._credit_features_4_content_btn:hover {
+    color: var(--color3) !important;
+}
+
+/* features section start from here */
+._credit_card_features_wrapper {
+    padding: 80px 0;
+}
+
+._credit_card_features_details_title {
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 1.2;
+    color: var(--color3);
+    max-width: 82%;
+    margin-bottom: 20px;
+}
+
+._credit_card_features_details_para {
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: -0.5px;
+    color: var(--color1);
+    max-width: 64%;
+    margin-bottom: 40px;
+}
+
+._credit_card_features_details_link,
+._credit_card_other_features_details_link {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    color: var(--bg4);
+    transition: .2s all ease-in-out;
+}
+
+._credit_card_features_details_link:hover,
+._credit_card_other_features_details_link:hover {
+    color: var(--color3);
+}
+
+._credit_card_features_details_link svg path,
+._credit_card_other_features_details_link svg path {
+    transition: .2s all ease-in-out;
+}
+
+._credit_card_features_details_link:hover svg path,
+._credit_card_other_features_details_link:hover svg path {
+    stroke: var(--bg2) !important;
+}
+
+._credit_card_features_card {
+    background: var(--bg3);
+    border-radius: 12px;
+    padding: 32px 60px;
+    max-width: 486px;
+    height: 368px;
+}
+
+._credit_card_features_card_top {
+    max-width: 366px;
+    height: 218px;
+    background: var(--bg5);
+    border-radius: 12px;
+    margin-bottom: 28px;
+    padding: 34px 35px 35px 34px;
+}
+
+._credit_card_features_balance_title {
+    font-family: 'Work Sans';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    color: var(--color1);
+    margin-bottom: 14px;
+}
+
+._credit_card_features_balance_rate {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+._credit_card_features_balance_total_rate {
+    font-family: 'Work Sans';
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.2;
+    color: var(--color3);
+}
+
+._credit_card_features_balance_para {
+    font-family: 'Work Sans';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+._up_rate {
+    color: var(--color4);
+}
+
+._down_rate {
+    color: var(--color5);
+}
+
+._credit_card_features_currency_status_info {
+    display: flex;
+}
+
+._credit_card_features_currency_info {
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+}
+
+._credit_card_features_currency_title,
+._credit_card_currency_status {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.2;
+    color: var(--color1);
+    margin-bottom: 10px;
+}
+
+._credit_card_features_currency_dollar,
+._credit_card_currency_status_active {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.2;
+    color: var(--color3);
+}
+
+._credit_card_features_card_btn_link {
+    width: 366px;
+    height: 58px;
+    background: var(--bg4) !important;
+    border-radius: 12px;
+    font-family: 'Work Sans';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s all ease-in;
+}
+
+._credit_card_features_card_btn_link:hover {
+    background-color: var(--color2) !important;
+    color: var(--color3) !important;
+}
+
+._credit_card_features_card_btn_link_span {
+    margin-right: 16px;
+}
+
+/* credit card website features section 2 */
+._credit_card_other_features_wrapper {
+    padding: 80px 0 60px 0;
+}
+
+._credit_card_other_features_card_bg_img {
+    max-width: 582px;
+    border-radius: 12px;
+}
+
+._credit_card_other_features_details {
+    margin: 0 auto;
+}
+
+._credit_card_other_features_details_title {
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 1.2;
+    color: var(--color3);
+    max-width: 85%;
+    margin-bottom: 20px;
+}
+
+._credit_card_other_features_details_para {
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: -0.5px;
+    margin-bottom: 40px;
+    color: var(--color1);
+    max-width: 74%;
+    margin-bottom: 40px;
+}
+
+._credit_card_business_logo {
+    margin-top: 60px;
+}
+
+._credit_card_business_logo_list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+._credit_card_business_logo_list_item {
+    margin-right: 40px;
+}
+
+._credit_card_business_logo_list_item_title {
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+    color: var(--color3);
+}
+
+._credit_card_business_logo_list_item_img {
+    max-width: 135px;
+    object-fit: cover;
+    width: 135px;
+}
+
+/* credit card website features section  3 */
+._credit_card_features_details_title_3 {
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 1.2;
+    color: var(--color3);
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+
+._credit_card_features_details_para_3 {
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: -0.5px;
+    color: var(--color1);
+    margin-bottom: 40px;
+    max-width: 63%;
+}
+
+._credit_card_features_3_card {
+    max-width: 532px;
+    padding: 36px;
+    background: var(--bg3);
+    border-radius: 12px;
+}
+
+._credit_card_features_3_card_top_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 44px;
+}
+
+._credit_card_features_3_card_top_content_title {
+    font-family: 'Work Sans';
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    color: var(--color3);
+}
+
+._credit_card_features_3_card_top_content_para {
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: right;
+    letter-spacing: -0.5px;
+    color: var(--color1);
+}
+
+._credit_card_features_3_card_top_content_para_span {
+    margin-left: 4px;
+}
+
+._credit_features_3_middle_cont_right {
+    padding: 0 0 0 30px;
+}
+
+._credit_features_3_middle_cont_right_list_item {
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    color: var(--color1);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    position: relative;
+}
+
+._credit_features_3_list_item_circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+._circle_1 {
+    background: var(--bg6);
+}
+
+._circle_2 {
+    background: var(--bg7);
+}
+
+._circle_3 {
+    background: var(--bg8);
+}
+
+._circle_4 {
+    background: var(--bg9);
+}
+
+._credit_card_features_3_card_bottom_content {
+    margin-top: 48px;
+}
+
+._credit_card_features_3_card_bottom_daily_cont_title,
+._credit_card_features_3_card_bottom_weekly_cont_title,
+._credit_card_features_3_card_bottom_monthy_cont_title {
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 1.2;
+    color: var(--color1);
+    margin-bottom: 16px;
+}
+
+._credit_card_features_3_card_bottom_daily_cont_rate,
+._credit_card_features_3_card_bottom_weekly_cont_rate,
+._credit_card_features_3_card_bottom_monthy_cont_rate {
+    font-family: 'Work Sans';
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    color: var(--color3);
+}
+
+/* credit card website service section 1 start from here */
+._credit_services_wrapper {
+    padding: 80px 0;
+}
+
+._credit_services_content {
+    margin-bottom: 64px;
+}
+
+._credit_services_content_title {
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color3);
+    max-width: 100%;
+    margin-bottom: 24px;
+}
+
+._credit_services_content_para {
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: -0.5px;
+    color: var(--color1);
+    max-width: 100%;
+}
+
+._credit_services_card_top1 {
+    max-width: 100%;
+    background: var(--bg10);
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+._credit_services_card_top {
+    max-width: 100%;
+    border: 1px solid var(--bg11);
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+._credit_services_card_top_img {
+    max-width: 32px;
+    height: 32px;
+    margin-right: 20px;
+}
+
+._credit_services_card_top_title {
+    font-family: 'Work Sans';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    color: var(--color3);
+}
+
+._credit_services_card_btm {
+    padding: 24px 24px 0 24px;
+}
+
+._credit_services_card_btm_para {
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: -0.5px;
+    color: var(--color1);
+    max-width: 84%;
+    margin-bottom: 32px;
+}
+
+._credit_services_card_top_btn_link,
+._credit_features_4_card_btn_link {
+    font-family: 'Work Sans';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: -0.25px;
+    color: var(--color3);
+    display: flex;
+    align-items: center;
+    transition: .2s all ease-in;
+}
+
+._credit_services_card_top_btn_link:hover,
+._credit_features_4_card_btn_link:hover {
+    color: var(--color2);
+}
+
+._credit_services_card_top_btn_link_span,
+._credit_features_4_card_btn_link_span {
+    margin-left: 8px;
+    display: block;
+    background: rgb(110 199 49 / 20%);
+    width: 18px;
+    height: 18px;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    transition: .2s all ease-in;
+}
+
+._credit_services_card_top_btn_link:hover svg path,
+._credit_features_4_card_btn_link:hover svg path {
+    stroke: var(--color3);
+}
+
+._credit_services_card_top_btn_link span,
+._credit_features_4_card_btn_link span {
+    transition: .2s all ease-in;
+}
+
+._credit_services_card_top_btn_link:hover span,
+._credit_features_4_card_btn_link:hover span {
+    background: var(--color2);
+}
+
+/* credit card website features section 4 */
+._credit_features_4_content {
+    margin-bottom: 60px;
+}
+
+._credit_features_4_content_title {
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color3);
+    max-width: 100%;
+    margin-bottom: 24px;
+}
+
+._credit_features_4_content_para {
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: -0.5px;
+    color: var(--color1);
+    max-width: 100%;
+}
+
+._credit_features_4_card {
+    padding: 36px;
+    background: var(--bg10);
+    border-radius: 12px;
+    height: 100%;
+    /* padding: 36px 36px 0;
+    margin-bottom: 20px;
+    height: calc(100% - 20px); */
+}
+
+._credit_features_4_card_img {
+    max-width: 64px;
+    height: 64px;
+    margin-bottom: 24px;
+}
+
+._credit_features_4_card_title {
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.2;
+    color: var(--color3);
+    margin-bottom: 28px;
+    max-width: 90%;
+}
+
+._credit_features_4_card_para {
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: -0.5px;
+    color: var(--color1);
+    max-width: 92%;
+    margin-bottom: 60px;
+}
+
+._credit_features_4_content_btn {
+    width: 184px;
+    height: 60px;
+    background: var(--bg4);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 55px;
+    border: 0;
+    position: relative;
+    z-index: 2;
+    transition: .2s all ease-in;
+}
+
+._credit_features_4_content_btn_link {
+    font-family: 'Work Sans';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* credit card website service section 2 */
+._credit_services_2_content_top_details {
+    margin-bottom: 44px;
+}
+
+._credit_services_2_content_title {
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 1.2;
+    color: var(--color3);
+    max-width: 100%;
+    margin-bottom: 24px;
+}
+
+._credit_services_2_content_para {
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: -0.5px;
+    color: var(--color1);
+    max-width: 71%;
+}
+
+._credit_services_2_assessmnt_time {
+    margin-bottom: 40px;
+}
+
+._credit_services_2_assessmnt_time_info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+._credit_services_2_assessmnt_time_info_para {
+    width: 290px;
+    font-family: 'Work Sans';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    padding-top: 16px;
+}
+
+._time_color_1 {
+    color: var(--bg6);
+    border-top: 2px solid var(--bg6);
+}
+
+._time_color_2 {
+    color: var(--bg7);
+    border-top: 2px solid var(--bg7);
+}
+
+._time_color_3 {
+    color: var(--bg8);
+    border-top: 2px solid var(--bg8);
+}
+
+._time_color_4 {
+    color: var(--bg9);
+    border-top: 2px solid var(--bg9);
+}
+
+._credit_services2_details {
+    background: var(--bg10);
+    border-radius: 20px;
+    padding: 40px 48px;
+}
+
+._credit_services2_left_info_title {
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.2;
+    color: var(--color3);
+    margin-bottom: 24px;
+}
+
+._credit_services2_left_info_para {
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: -0.5px;
+    color: var(--color1);
+    width: 72%;
+    margin-bottom: 42px;
+}
+
+._credit_services2_left_info_btn_link {
+    font-family: 'Work Sans';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: -0.25px;
+    color: var(--bg4);
+}
+
+._credit_services2_left_info_btn_link:hover {
+    color: var(--color3);
+}
+
+._credit_services2_left_info_btn_link svg path {
+    transition: .2s all ease-in-out;
+}
+
+._credit_services2_left_info_btn_link:hover svg path {
+    stroke: var(--color3);
+}
+
+._credit_services2_right_bg_img {
+    margin: 0 auto;
+}
+
+._credit_services2_left_info_btn_link_span {
+    margin-left: 8px;
+}
+
+/* credit card website CTA starts */
+._credit_CTA_wrapper {
+    padding: 80px 0;
+}
+
+._credit_CTA_content {
+    background: linear-gradient(266.62deg, #9A77FE 0%, #4D05FE 100%);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 83px 0;
+}
+
+._credit_CTA_content_title {
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 62px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color3);
+    max-width: 59%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+._credit_CTA_content_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+._credit_CTA_content_btn_link {
+    font-family: 'Work Sans';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color3) !important;
+    background: var(--bg4) !important;
+    width: 184px;
+    height: 60px;
+    border-color: transparent;
+    border-radius: 12px;
+    transition: .2s all ease-in;
+}
+
+._credit_CTA_content_btn_link:hover {
+    color: var(--color3) !important;
+    background: transparent !important;
+    border-color: var(--bg2) !important;
+}
+
+/* footer section */
+._credit_footer_wrapper {
+    padding: 80px 0 60px 0;
+}
+
+._credit_footer_logo_img {
+    max-width: 148px;
+    margin-bottom: 16px;
+}
+
+._credit_footer_sociallink_list_ul {
+    display: flex;
+    align-items: center;
+}
+
+._credit_footer_sociallink {
+    margin-right: 12px;
+}
+
+._credit_footer_sociallink_link {
+    width: 48px;
+    height: 48px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid rgb(217 217 217 / 20%);
+    transition: .2s all ease-in;
+}
+
+._credit_footer_sociallink_link:hover {
+    background-color: var(--color2);
+}
+
+._credit_footer_sociallink_link svg path {
+    transition: .2s all ease-in;
+}
+
+._credit_footer_sociallink_link:hover svg path {
+    fill: var(--color3) !important;
+}
+
+._credit_footer_pera {
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: -0.5px;
+    color: var(--color1);
+    margin-top: 16px;
+    transition: .2s all ease-in;
+}
+
+._credit_footer_title {
+    font-family: 'Work Sans';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    text-transform: uppercase;
+    color: var(--color1);
+    margin-bottom: 36px;
+}
+
+._credit_footer_list_item {
+    margin-bottom: 24px;
+}
+
+._credit_footer_list_item_link {
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    color: var(--color1);
+    transition: .2s all ease-in;
+}
+
+._credit_footer_list_item_link:hover {
+    color: var(--color2);
+}
+
+/* responsive */
+@media (max-width:1399px) {
+    ._credit_header_nav_wrapper_item {
+        margin-right: 12px;
+    }
+
+    ._credit_header_details_para {
+        max-width: 67%;
+    }
+
+    ._credit_card_features_details_para {
+        max-width: 71%;
+    }
+
+    ._credit_card_other_features_details_title {
+        max-width: 90%;
+    }
+
+    ._credit_card_other_features_details_para {
+        max-width: 77%;
+    }
+
+    ._credit_card_business_logo_list {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    ._credit_card_other_features_details {
+        padding-left: 35px;
+    }
+
+    ._credit_card_features_details_para_3 {
+        max-width: 72%;
+    }
+
+    ._credit_services_card_btm_para {
+        max-width: 100%;
+    }
+
+    ._credit_features_4_card_title {
+        max-width: 97%;
+    }
+
+    ._credit_features_4_card_para {
+        max-width: 96%;
+    }
+
+    ._credit_services_2_content_para {
+        max-width: 78%;
+    }
+
+    ._credit_services_2_assessmnt_time_info_para {
+        margin-right: 20px;
+    }
+
+    ._credit_services2_left_info_para {
+        width: 85%;
+    }
+}
+
+@media (max-width:1199px) {
+    ._credit_header_details_title {
+        font-size: 60px;
+    }
+
+    ._credit_header_details_para {
+        max-width: 81%;
+    }
+
+    ._credit_header_wrap {
+        padding-top: 80px;
+    }
+
+    ._credit_card_features_details_para {
+        max-width: 85%;
+    }
+
+    ._credit_card_features_balance_total_rate {
+        font-size: 25px;
+    }
+
+    ._credit_card_other_features_details_title {
+        font-size: 36px;
+    }
+
+    ._credit_card_other_features_details_para {
+        max-width: 100%;
+    }
+
+    ._credit_card_features_card_btn_link {
+        max-width: 100%;
+    }
+
+    ._credit_card_business_logo_list_item_title {
+        font-size: 18px;
+    }
+
+    ._credit_card_business_logo_list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    ._credit_card_business_logo_list_item {
+        margin-right: 18px;
+    }
+
+    ._credit_card_features_details_para_3 {
+        max-width: 82%;
+    }
+
+    ._credit_features_3_list_item_circle {
+        margin-right: 2px;
+    }
+
+    ._credit_features_3_middle_cont_right_list_item {
+        font-size: 18px;
+    }
+
+    ._credit_card_features_3_card_bottom_daily_cont_rate,
+    ._credit_card_features_3_card_bottom_weekly_cont_rate,
+    ._credit_card_features_3_card_bottom_monthy_cont_rate {
+        font-size: 25px;
+    }
+
+    ._credit_services_card_top_title {
+        font-size: 15px;
+    }
+
+    ._credit_features_4_card_title {
+        font-size: 18px;
+    }
+
+    ._credit_features_4_card_para {
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+
+    ._credit_features_4_card {
+        padding: 30px;
+    }
+
+    ._credit_features_4_card {
+        padding: 25px;
+        margin-bottom: 30px;
+    }
+
+    ._credit_services_2_content_para {
+        max-width: 98%;
+    }
+
+    ._credit_services2_left_info_para {
+        width: 100%;
+    }
+}
+
+@media (max-width:991px) {
+    ._credit_header_nav_wrapper_list {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-top: 20px;
+    }
+
+    ._credit_header_nav_wrapper_item {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    ._credit_header_nav_form_btn {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    ._credit_header_nav_btn {
+        margin-top: 20px;
+    }
+
+    ._credit_header_details_para {
+        max-width: 84%;
+    }
+
+    ._credit_header_bg_img {
+        margin-top: 80px;
+    }
+
+    ._credit_card_features_wrapper {
+        padding: 80px 0 60px 0;
+    }
+
+    ._credit_card_features_details_title {
+        font-size: 39px;
+    }
+
+    ._credit_card_features_details_para {
+        max-width: 90%;
+        margin-bottom: 30px;
+        font-size: 17px;
+    }
+
+    ._credit_card_features_card {
+        padding: 22px 25px;
+    }
+
+    ._credit_card_features_card_top {
+        padding: 20px;
+        margin-bottom: 34px;
+    }
+
+    ._credit_card_features_balance_total_rate {
+        font-size: 18px;
+    }
+
+    ._credit_card_features_card_btn_link {
+        max-width: 100%;
+        height: 58px;
+        font-size: 19px;
+    }
+
+    ._credit_card_other_features_details_title {
+        font-size: 26px;
+        margin-bottom: 17px;
+    }
+
+    ._credit_card_business_logo_list_item {
+        margin-right: 25px;
+    }
+
+    ._credit_card_business_logo_list_item_title {
+        text-align: center;
+    }
+
+    ._credit_card_other_features_details_para {
+        margin-bottom: 25px;
+        font-size: 16px;
+    }
+
+    ._credit_card_features_details_title_3 {
+        font-size: 34px;
+    }
+
+    ._credit_card_features_details_para_3 {
+        max-width: 95%;
+        margin-bottom: 30px;
+    }
+
+    ._credit_card_features_3_card_top_content_title {
+        font-size: 22px;
+    }
+
+    ._credit_features_3_list_item_circle {
+        margin-right: 10px;
+    }
+
+    ._credit_card_features_details_title_3 {
+        font-size: 30px;
+    }
+
+    ._credit_card_features_details_para_3 {
+        max-width: 95%;
+        margin-bottom: 25px;
+        font-size: 17px;
+    }
+
+    ._credit_card_features_3_card_bottom_daily_cont_rate,
+    ._credit_card_features_3_card_bottom_weekly_cont_rate,
+    ._credit_card_features_3_card_bottom_monthy_cont_rate {
+        font-size: 19px;
+    }
+
+    ._credit_card_features_3_card {
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+
+    ._credit_services_content_title,
+    ._credit_features_4_content_title,
+    ._credit_services_2_content_title {
+        font-size: 34px;
+        margin-bottom: 20px;
+    }
+
+    ._credit_services_card_btm_para {
+        max-width: 84%;
+        margin-bottom: 25px;
+    }
+
+    ._credit_services_card_top1,
+    ._credit_services_card_top {
+        margin-bottom: 0;
+    }
+
+    ._credit_services_card {
+        margin-bottom: 40px
+    }
+
+    ._credit_services_card_top1,
+    ._credit_services_card_top {
+        max-width: 77%;
+        padding: 15px;
+    }
+
+    ._credit_services2_right_bg_img {
+        margin-top: 40px;
+    }
+
+    ._credit_CTA_content_title {
+        font-size: 51px;
+    }
+
+    ._credit_footer_logo_details {
+        margin-bottom: 45px;
+    }
+
+    ._credit_footer_title {
+        margin-bottom: 23px;
+    }
+
+    ._credit_footer_list_1,._credit_footer_list_2 {
+        margin-bottom: 50px;
+
+    }
+
+    ._credit_footer_list_item {
+        margin-bottom: 19px;
+    }
+
+    ._credit_footer_wrapper {
+        padding: 30px 0 60px 0;
+    }
+}
+
+@media (max-width:767px) {
+    ._credit_header_nav_wrapper_list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 25px;
+    }
+
+    ._credit_header_nav_form_btn {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    ._credit_header_nav_btn {
+        width: 140px;
+        height: 45px;
+        font-size: 17px;
+    }
+
+    ._credit_header_nav_login {
+        margin-right: 0;
+    }
+
+    ._credit_header_wrap {
+        padding-top: 70px;
+    }
+
+    ._credit_header_details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    ._credit_header_details_title {
+        font-size: 45px;
+        text-align: center;
+    }
+
+    ._credit_header_details_para {
+        max-width: 100%;
+        margin-bottom: 50px;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    ._credit_header_bg_img {
+        margin: 80px 0 50px 0;
+    }
+
+    ._credit_card_features_wrapper {
+        padding: 25px 0 60px 0;
+    }
+
+    ._credit_card_features_details_title {
+        font-size: 35px;
+        max-width: 100%;
+    }
+
+    ._credit_card_features_details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    ._credit_card_features_details_para {
+        max-width: 100%;
+        margin-bottom: 30px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    ._credit_card_features_card {
+        padding: 30px;
+        margin: 0 auto;
+        margin-top: 50px;
+
+    }
+
+    ._credit_card_features_card_top {
+        margin: 0 auto;
+    }
+
+    ._credit_card_features_card_btn_link {
+        max-width: 100%;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+    ._credit_card_other_features_wrapper {
+        padding: 60px 0;
+    }
+
+    ._credit_card_other_features_details,
+    ._credit_card_features_details_3 {
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    ._credit_card_features_3_card_top_content {
+        margin-bottom: 30px;
+    }
+
+    ._credit_card_features_3_card_bottom_content {
+        margin-top: 25px;
+    }
+
+    ._credit_card_features_details_para_3 {
+        max-width: 100%;
+        margin-bottom: 20px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    ._credit_card_other_features_card_bg_img {
+        margin-bottom: 50px;
+    }
+
+    ._credit_card_business_logo_list_item_img {
+        max-width: 104px;
+        height: 90px;
+        object-fit: cover;
+        width: 135px;
+    }
+
+    ._credit_card_other_features_details_title {
+        font-size: 24px;
+        margin-bottom: 16px;
+        text-align: center;
+    }
+
+    ._credit_card_other_features_details_para {
+        margin-bottom: 25px;
+        font-size: 17px;
+        text-align: center;
+    }
+
+    ._credit_card_features_details_title_3 {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    ._credit_services_card {
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    ._credit_services_card_btm_para {
+        max-width: 87%;
+        margin-bottom: 25px;
+        font-size: 15px;
+    }
+
+    ._credit_services_card_btm {
+        padding: 15px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    ._credit_services_card_top_btn_link,
+    ._credit_features_4_card_btn_link {
+        font-size: 16px;
+    }
+
+    ._credit_services_card_top_img {
+        margin-right: 15px;
+    }
+
+    ._credit_services_card_top_title {
+        font-size: 14px;
+    }
+
+    ._credit_services_card_top {
+        max-width: 80%;
+        padding: 15px 26px;
+    }
+
+    ._credit_services_wrapper {
+        padding: 80px 0 40px 0;
+    }
+
+    ._credit_services_content_title,
+    ._credit_services_content_title,
+    ._credit_features_4_content_title {
+        font-size: 28px;
+        margin-bottom: 17px;
+    }
+
+    ._credit_features_4_card {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    ._credit_features_4_card_title {
+        text-align: center;
+        margin-bottom: 19px;
+        font-size: 20px;
+    }
+
+    ._credit_features_4_card_para {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    ._credit_services_content {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    ._credit_features_4_content {
+        margin-bottom: 50px;
+    }
+
+    ._credit_features_4_content_btn {
+        margin-top: 35px;
+    }
+
+    ._credit_services_2_content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    ._credit_services_2_content_title {
+        font-size: 30px;
+        margin-bottom: 18px;
+        text-align: center;
+    }
+
+    ._credit_services_2_content_para {
+        font-size: 16px;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    ._credit_CTA_wrapper {
+        padding: 30px 0 50px 0;
+    }
+
+    ._credit_CTA_content_title {
+        font-size: 38px;
+    }
+
+    ._credit_footer_title {
+        margin-bottom: 20px;
+    }
+
+    ._credit_footer_list_item {
+        margin-bottom: 12px;
+    }
+
+    ._credit_footer_wrapper {
+        padding: 30px 0;
+    }
+
+    ._credit_services_2_assessmnt_time_info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    ._credit_services_2_assessmnt_time_info_para {
+        margin-right: 0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    ._credit_services2_left_info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    ._credit_services2_left_info_para {
+        text-align: center;
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+
+    ._credit_services2_left_info_title {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    ._credit_footer_logo_img {
+        max-width: 24%;
+    }
+
+}
+
+@media (max-width:575px) {
+
+    ._credit_header_details_title {
+        font-size: 35px;
+        max-width: 95%;
+    }
+
+    ._credit_header_details_btn_link {
+        width: 160px;
+        height: 50px;
+        font-size: 17px;
+    }
+
+    ._credit_header_details_para {
+        margin-bottom: 40px;
+    }
+
+    ._credit_header_bg_img {
+        margin-top: 60px;
+    }
+
+    ._credit_card_features_wrapper {
+        padding: 20px 0;
+    }
+
+    ._credit_card_features_details_title {
+        font-size: 30px;
+    }
+
+    ._credit_card_features_details_para {
+        margin-bottom: 20px;
+    }
+
+    ._credit_card_other_features_details_title {
+        margin-bottom: 17px;
+        font-size: 23px;
+    }
+
+    ._credit_card_other_features_details_para {
+        font-size: 15px;
+    }
+
+    ._credit_card_business_logo {
+        margin-top: 50px;
+    }
+
+    ._credit_card_features_details_3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    ._credit_card_features_3_card {
+        padding: 20px;
+    }
+
+    ._credit_services_card_btm_para {
+        max-width: 61%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    ._credit_services_card_top1,
+    ._credit_services_card_top {
+        max-width: 100%;
+        padding: 10px 54px;
+    }
+
+    ._credit_services_content_title,
+    ._credit_services_content_title,
+    ._credit_features_4_content_title {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    ._credit_features_4_content {
+        margin-bottom: 40px;
+    }
+
+
+    ._credit_features_4_content_btn {
+        width: 150px;
+        height: 52px;
+    }
+
+    ._credit_features_4_content_btn_link {
+        font-size: 16px;
+    }
+
+    ._credit_services2_left_info_para {
+        margin-bottom: 17px;
+    }
+
+    ._credit_services_2_content_para {
+        font-size: 15px;
+    }
+
+    ._credit_services2_details {
+        padding: 30px;
+    }
+
+    ._credit_CTA_content {
+        padding: 36px 20px;
+    }
+
+    ._credit_CTA_content_btn_link {
+        font-size: 16px;
+        width: 161px;
+        height: 50px;
+    }
+
+    ._credit_CTA_content_title {
+        font-size: 26px;
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    ._credit_services_2_content_title {
+        font-size: 28px;
+        margin-bottom: 17px;
+    }
+
+    ._credit_services2_left_info_title {
+        font-size: 28px;
+    }
+}
+
+@media (max-width:420px) {
+    ._credit_header_nav_wrapper_item_link {
+        font-size: 15px;
+    }
+
+    ._credit_header_nav_login {
+        font-size: 15px;
+    }
+
+    ._credit_header_nav_wrapper_item {
+        margin-bottom: 6px;
+        margin-right: 0;
+    }
+
+    ._credit_header_nav_btn {
+        width: 130px;
+        height: 43px;
+        font-size: 16px;
+    }
+
+    ._credit_header_wrap {
+        padding-top: 50px;
+    }
+
+    ._credit_header_details_title {
+        font-size: 30px;
+    }
+
+    ._credit_header_details_para {
+        font-size: 13px;
+        margin-bottom: 30px;
+    }
+
+    ._credit_header_details_btn_link {
+        width: 150px;
+        height: 46px;
+        font-size: 16px;
+    }
+
+    ._credit_card_features_card_btn_link {
+        font-size: 17px;
+    }
+
+    ._credit_card_features_details_title {
+        font-size: 25px;
+        margin-bottom: 17px;
+    }
+
+    ._credit_card_features_details_para {
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+
+    ._credit_card_other_features_details_title {
+        font-size: 17px;
+        margin-bottom: 13px;
+    }
+
+    ._credit_card_business_logo_list_item {
+        margin-right: 30px;
+    }
+
+    ._credit_card_other_features_details_para {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    ._credit_card_business_logo_list_item_title {
+        font-size: 18px;
+    }
+
+    ._credit_card_features_wrapper {
+        padding: 30px 0;
+    }
+
+    ._credit_card_features_details_link,
+    ._credit_card_other_features_details_link {
+        font-size: 16px;
+    }
+
+    ._credit_card_features_details_title_3 {
+        font-size: 21px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    ._credit_card_features_details_para_3 {
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+
+    ._credit_card_features_3_card {
+        padding: 20px;
+    }
+
+    ._credit_card_other_features_wrapper {
+        padding: 35px 0;
+    }
+
+    ._credit_card_other_features_details,
+    ._credit_card_features_details_3 {
+        margin-top: 25px;
+    }
+
+    ._credit_services_wrapper {
+        padding: 40px 0;
+    }
+
+    ._credit_services_card_top1,
+    ._credit_services_card_top {
+        max-width: 100%;
+        padding: 10px 30px;
+    }
+
+    ._credit_services_card_btm_para {
+        margin-bottom: 15px;
+    }
+
+    ._credit_services_card_top_btn_link,
+    ._credit_features_4_card_btn_link {
+        font-size: 15px;
+    }
+
+    ._credit_services_content_title,
+    ._credit_services_content_title,
+    ._credit_features_4_content_title {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    ._credit_services_content_para {
+        font-size: 16px;
+    }
+
+    ._credit_services_content {
+        margin-bottom: 40px;
+    }
+
+    ._credit_features_4_card_title {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    ._credit_features_4_card_para {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    ._credit_features_4_content_btn {
+        width: 145px;
+        height: 45px;
+        margin-top: 25px;
+    }
+
+    ._credit_services_2_content_title {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    ._credit_services2_left_info_para {
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+
+    ._credit_services2_left_info_title {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    ._credit_card_features_3_card_bottom_content {
+        margin-top: 25px;
+    }
+
+    ._credit_features_3_middle_cont_right {
+        padding: 0 0 0 0;
+    }
+
+    ._credit_card_features_3_card_top_content {
+        margin-bottom: 30px;
+    }
+
+    ._credit_features_3_middle_cont_right_list_item {
+        font-size: 16px;
+    }
+
+    ._credit_features_3_list_item_circle {
+        margin-right: 6px;
+        width: 15px;
+        height: 15px;
+    }
+
+    ._credit_card_features_3_card_top_content_title {
+        font-size: 18px;
+    }
+
+    ._credit_card_features_3_card_top_content_para {
+        font-size: 16px;
+    }
+
+    ._credit_CTA_content {
+        padding: 60px 0;
+    }
+
+    ._credit_CTA_content_title {
+        font-size: 29px;
+    }
+
+    ._credit_CTA_content_btn_link {
+        font-size: 16px;
+        width: 150px;
+        height: 50px;
+    }
+
+    ._credit_footer_list_item {
+        margin-bottom: 10px;
+    }
+
+    ._credit_footer_logo {
+        font-size: 29px;
+    }
+
+    ._credit_footer_list_item_link,
+    ._credit_footer_pera {
+        font-size: 15px;
+    }
+
+    ._credit_footer_title {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width:375px) {
+    ._credit_card_features_details_title {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    ._credit_card_other_features_details_title {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    ._credit_card_other_features_details_para {
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+
+    ._credit_services_card_btm_para {
+        max-width: 70%;
+    }
+
+    ._credit_services_content_title {
+        font-size: 19px;
+        margin-bottom: 10px;
+    }
+
+    ._credit_services_content_para {
+        font-size: 14px;
+    }
+
+    ._credit_services_content {
+        margin-bottom: 30px;
+    }
+
+    ._credit_services2_left_info_title {
+        font-size: 23px;
+        margin-bottom: 14px;
+    }
+
+    ._credit_CTA_content_title {
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+
+    ._credit_CTA_content {
+        padding: 50px 0;
+    }
+
+    ._credit_footer_pera {
+        font-size: 15px;
+    }
+
+}
+
+/* variable */
+:root {
+    --bg1: #000000;
+    --bg2: #FFFFFF;
+    --bg3: #1F212D;
+    --bg4: #137AF4;
+    --bg5: #0A0A0A;
+    --bg6: #E92C81;
+    --bg7: #E9B258;
+    --bg8: #5FCFFF;
+    --bg9: #C4F85C;
+    --bg10: #15161A;
+    --bg11: #222222;
+    --color1: #B2B9C2;
+    --color2: #9A77FE;
+    --color3: #FFFFFF;
+    --color4: #008000;
+    --color5: #FF0000;
+}

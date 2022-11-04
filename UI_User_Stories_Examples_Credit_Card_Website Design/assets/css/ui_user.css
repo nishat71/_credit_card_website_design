@@ -1,0 +1,1471 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-color: var(--bg1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    /* color: transparent; */
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+}
+
+/* header-nav start from here */
+._ui_user_credit_header_wrapper {
+    padding: 0;
+}
+
+._ui_user_credit_logo {
+    max-width: 148px;
+}
+
+._ui_user_credit_header_nav_wrapper {
+    padding: 15px 0;
+    border-bottom: 2px solid var(--bg3);
+}
+
+._ui_user_credit_header_nav_wrapper_list {
+    margin: 0 auto;
+}
+
+._ui_user_credit_header_nav_wrapper_item {
+    margin-right: 32px;
+}
+
+._ui_user_credit_header_nav_wrapper_item:last-child {
+    margin-right: 0;
+}
+
+._ui_user_credit_header_nav_wrapper_item_link._active_link {
+    color: var(--color3) !important;
+}
+._ui_user_credit_header_nav_wrapper_item_link {
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    color: var(--color1) !important;
+    transition: .2s all ease;
+    position: relative;
+}
+
+._ui_user_credit_header_nav_wrapper_item_link::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: var(--color2);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .2s all ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+._ui_user_credit_header_nav_wrapper_item_link:hover::after {
+    visibility: visible;
+    opacity: 1;
+}
+
+._ui_user_credit_header_nav_wrapper_item_link:hover,
+._ui_user_credit_header_nav_login:hover {
+    color: var(--color2) !important;
+}
+
+._ui_user_credit_header_nav_form_btn {
+    display: flex;
+    align-items: center;
+}
+
+._ui_user_credit_header_nav_login {
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    color: var(--color1);
+    margin-right: 32px;
+    transition: .2s all ease-in;
+}
+
+._ui_user_credit_header_nav_btn {
+    width: 154px;
+    height: 50px;
+    font-family: 'Work Sans';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color3) !important;
+    background: var(--bg4) !important;
+    border: 0;
+    border-radius: 4px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s all ease-in;
+}
+
+._ui_user_credit_header_nav_btn::before {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 100%;
+    background-color: var(--color2);
+    z-index: -1;
+    top: 0;
+    left: 0;
+    border-radius: 4px;
+    transition: .2s all ease;
+}
+
+._ui_user_credit_header_nav_btn:hover::before {
+    visibility: visible;
+    opacity: 1;
+    width: 100%;
+}
+
+._ui_user_credit_header_nav_btn:hover {
+    color: var(--color3) !important;
+}
+
+/* header herosection start from here */
+._ui_user_credit_header_wrap {
+    padding: 100px 0;
+}
+
+._ui_user_credit_header_details_title {
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 1.2;
+    color: var(--color3);
+    max-width: 89%;
+    margin-bottom: 12px;
+}
+
+._ui_user_credit_header_details_para {
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: -0.5px;
+    color: var(--color1);
+    max-width: 50%;
+    margin-bottom: 60px;
+}
+
+._ui_user_credit_header_details_btn_link {
+    width: 184px;
+    height: 60px;
+    font-family: 'Work Sans';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color3) !important;
+    background: var(--bg4) !important;
+    border-radius: 12px;
+    border: 0;
+    position: relative;
+    z-index: 2;
+    transition: .3s all ease-in-out;
+}
+
+._ui_user_credit_header_details_btn_link::before {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 100%;
+    background-color: var(--color2) !important;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    border-radius: 12px;
+    transition: .3s all ease-in-out;
+}
+
+._ui_user_credit_header_details_btn_link:hover::before {
+    width: 100%;
+}
+
+._ui_user_credit_header_details_btn_link:hover {
+    color: var(--color3) !important;
+}
+
+
+/* UI User credit card website services section */
+._ui_user_credit_services_wrapper {
+    padding: 80px 0;
+}
+
+._ui_user_credit_services_content {
+    padding-bottom: 80px;
+}
+
+._ui_user_credit_services_content_title {
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color3);
+    max-width: 44%;
+    margin: 0 auto;
+    margin-bottom: 12px;
+}
+
+._ui_user_credit_services_content_para {
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: -0.5px;
+    color: var(--color1);
+    max-width: 30%;
+    margin: 0 auto;
+}
+
+/* UI User details 1 */
+._ui_user_credit_services_details_info_1 {
+    margin-bottom: 150px;
+}
+
+._ui_user_credit_services_assessmnt_time_1 {
+    margin-bottom: 40px;
+}
+
+._ui_user_credit_services_assessmnt_time_1_title {
+    max-width: 100%;
+    font-family: 'Work Sans';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    padding-top: 16px;
+    color: var(--bg6);
+    border-top: 2px solid var(--bg6);
+
+}
+
+._ui_user_credit_services_details_1 {
+    background: var(--bg5);
+    border-radius: 20px;
+    padding: 40px 48px;
+}
+
+._ui_user_credit_services_1_left_info_title {
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.2;
+    color: var(--color3);
+    margin-bottom: 24px;
+}
+
+._ui_user_credit_services_1_left_info_para {
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: -0.5px;
+    color: var(--color1);
+    max-width: 72%;
+    margin-bottom: 40px;
+}
+
+._ui_user_credit_services_1_left_info_btn_link {
+    font-family: 'Work Sans';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: -0.25px;
+    color: var(--color4);
+}
+
+._ui_user_credit_services_1_left_info_btn_link:hover {
+    color: var(--color3);
+}
+
+._ui_user_credit_services_1_left_info_btn_link_span {
+    margin-left: 8px;
+}
+
+._ui_user_credit_services_1_left_info_btn_link svg path {
+    transition: .2s all ease-in-out;
+}
+
+._ui_user_credit_services_1_left_info_btn_link:hover svg path {
+    stroke: var(--color3);
+}
+
+._ui_user_credit_services_1_right_bg_img {
+    margin: 0 auto;
+}
+
+/* UI User details 2 */
+._ui_user_credit_services_details_info_2 {
+    margin-bottom: 150px;
+}
+
+._ui_user_credit_services_assessmnt_time_2 {
+    margin-bottom: 40px;
+}
+
+._ui_user_credit_services_assessmnt_time_2_title {
+    max-width: 100%;
+    font-family: 'Work Sans';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: right;
+    letter-spacing: -0.5px;
+    padding-top: 16px;
+    color: var(--bg7);
+    border-top: 2px solid var(--bg7);
+
+}
+
+._ui_user_credit_services_details_2 {
+    background: var(--bg5);
+    border-radius: 20px;
+    padding: 40px 48px;
+}
+
+._ui_user_credit_services_2_left_info {
+    /* margin: 0 auto; */
+    padding-left: 70px;
+}
+
+._ui_user_credit_services_2_left_info_title {
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.2;
+    color: var(--color3);
+    margin-bottom: 24px;
+}
+
+._ui_user_credit_services_2_left_info_para {
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: -0.5px;
+    color: var(--color1);
+    max-width: 80%;
+    margin-bottom: 40px;
+}
+
+._ui_user_credit_services_2_left_info_btn_link {
+    font-family: 'Work Sans';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: -0.25px;
+    color: var(--color4);
+}
+
+._ui_user_credit_services_2_left_info_btn_link:hover {
+    color: var(--color3);
+}
+
+._ui_user_credit_services_2_left_info_btn_link_span {
+    margin-left: 8px;
+}
+
+._ui_user_credit_services_2_left_info_btn_link svg path {
+    transition: .2s all ease-in-out;
+}
+
+._ui_user_credit_services_2_left_info_btn_link:hover svg path {
+    stroke: var(--color3);
+}
+
+._ui_user_credit_services_2_right_bg_img {
+    margin: 0 auto;
+}
+
+/* UI User details 3 */
+._ui_user_credit_services_details_info_3 {
+    margin-bottom: 150px;
+}
+
+._ui_user_credit_services_assessmnt_time_3 {
+    margin-bottom: 40px;
+}
+
+._ui_user_credit_services_assessmnt_time_3_title {
+    max-width: 100%;
+    font-family: 'Work Sans';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    padding-top: 16px;
+    color: var(--bg8);
+    border-top: 2px solid var(--bg8);
+
+}
+
+._ui_user_credit_services_details_3 {
+    background: var(--bg5);
+    border-radius: 20px;
+    padding: 40px 48px;
+}
+
+._ui_user_credit_services_3_left_info_title {
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.2;
+    color: var(--color3);
+    margin-bottom: 24px;
+}
+
+._ui_user_credit_services_3_left_info_para {
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: -0.5px;
+    color: var(--color1);
+    max-width: 72%;
+    margin-bottom: 40px;
+}
+
+._ui_user_credit_services_3_left_info_btn_link {
+    font-family: 'Work Sans';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: -0.25px;
+    color: var(--color4);
+}
+
+._ui_user_credit_services_3_left_info_btn_link:hover {
+    color: var(--color3);
+}
+
+._ui_user_credit_services_3_left_info_btn_link_span {
+    margin-left: 8px;
+}
+
+._ui_user_credit_services_3_left_info_btn_link svg path {
+    transition: .2s all ease-in-out;
+}
+
+._ui_user_credit_services_3_left_info_btn_link:hover svg path {
+    stroke: var(--color3);
+}
+
+._ui_user_credit_services_3_right_bg_img {
+    margin: 0 auto;
+}
+
+/* UI User details 4 */
+._ui_user_credit_services_details_info_4 {
+    margin-bottom: 80px;
+}
+
+._ui_user_credit_services_assessmnt_time_4 {
+    margin-bottom: 40px;
+}
+
+._ui_user_credit_services_assessmnt_time_4_title {
+    max-width: 100%;
+    font-family: 'Work Sans';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    padding-top: 16px;
+    text-align: right;
+    color: var(--bg9);
+    border-top: 2px solid var(--bg9);
+
+}
+
+._ui_user_credit_services_details_4 {
+    background: var(--bg5);
+    border-radius: 20px;
+    padding: 40px 48px;
+}
+
+._ui_user_credit_services_4_left_info {
+    padding-left: 70px;
+}
+
+._ui_user_credit_services_4_left_info_title {
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.2;
+    color: var(--color3);
+    margin-bottom: 24px;
+}
+
+._ui_user_credit_services_4_left_info_para {
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: -0.5px;
+    color: var(--color1);
+    max-width: 80%;
+    margin-bottom: 40px;
+}
+
+._ui_user_credit_services_4_left_info_btn_link {
+    font-family: 'Work Sans';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: -0.25px;
+    color: var(--color4);
+}
+
+._ui_user_credit_services_4_left_info_btn_link:hover {
+    color: var(--color3);
+}
+
+._ui_user_credit_services_4_left_info_btn_link_span {
+    margin-left: 8px;
+}
+
+._ui_user_credit_services_4_left_info_btn_link svg path {
+    transition: .2s all ease-in-out;
+}
+
+._ui_user_credit_services_4_left_info_btn_link:hover svg path {
+    stroke: var(--color3);
+}
+
+._ui_user_credit_services_4_right_bg_img {
+    margin: 0 auto;
+}
+/* Ui User credit card website CTA starts */
+._ui_user_credit_CTA_wrapper {
+    padding-bottom: 80px;
+}
+
+._ui_user_credit_CTA_content {
+    background: linear-gradient(266.62deg, #9A77FE 0%, #4D05FE 100%);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 83px 0;
+}
+
+._ui_user_credit_CTA_content_title {
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 62px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color3);
+    max-width: 59%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+._ui_user_credit_CTA_content_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+._ui_user_credit_CTA_content_btn_link {
+    font-family: 'Work Sans';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color3) !important;
+    background: var(--bg4) !important;
+    width: 184px;
+    height: 60px;
+    border-color: transparent;
+    border-radius: 12px;
+    transition: .2s all ease-in;
+}
+
+._ui_user_credit_CTA_content_btn_link:hover {
+    color: var(--color3) !important;
+    background: transparent !important;
+    border-color: var(--bg2) !important;
+}
+
+/* footer section */
+._ui_user_credit_footer_wrapper {
+    padding: 80px 0 60px 0;
+}
+
+._ui_user_credit_footer_logo_img {
+    width: 148px;
+    margin-bottom: 16px;
+}
+
+._ui_user_credit_footer_sociallink_list_ul {
+    display: flex;
+    align-items: center;
+}
+
+._ui_user_credit_footer_sociallink {
+    margin-right: 12px;
+}
+
+._ui_user_credit_footer_sociallink_link {
+    width: 48px;
+    height: 48px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid rgb(217 217 217 / 20%);
+    transition: .2s all ease-in;
+}
+
+._ui_user_credit_footer_sociallink_link:hover {
+    background-color: var(--color2);
+}
+
+._ui_user_credit_footer_sociallink_link svg path {
+    transition: .2s all ease-in;
+}
+
+._ui_user_credit_footer_sociallink_link:hover svg path {
+    fill: var(--color3) !important;
+}
+
+._ui_user_credit_footer_pera {
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: -0.5px;
+    color: var(--color1);
+    margin-top: 16px;
+    transition: .2s all ease-in;
+}
+
+._ui_user_credit_footer_title {
+    font-family: 'Work Sans';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    text-transform: uppercase;
+    color: var(--color1);
+    margin-bottom: 36px;
+}
+
+._ui_user_credit_footer_list_item {
+    margin-bottom: 24px;
+}
+
+._ui_user_credit_footer_list_item_link {
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    color: var(--color1);
+    transition: .2s all ease-in;
+}
+
+._ui_user_credit_footer_list_item_link:hover {
+    color: var(--color2);
+}
+
+/* responsive */
+@media (max-width:1399px) {
+
+    /* herosection */
+    ._ui_user_credit_header_details_para {
+        max-width: 57%;
+    }
+
+    /* UI User service section */
+    ._ui_user_credit_services_content_title {
+        max-width: 48%;
+    }
+
+    ._ui_user_credit_services_content_para {
+        max-width: 35%;
+    }
+
+    ._ui_user_credit_services_1_left_info_para {
+        max-width: 85%;
+    }
+
+    ._ui_user_credit_services_2_left_info_para {
+        max-width: 97%;
+    }
+
+    ._ui_user_credit_services_3_left_info_para {
+        max-width: 85%;
+    }
+
+    ._ui_user_credit_services_4_left_info_para {
+        max-width: 97%;
+    }
+}
+
+@media (max-width:1199px) {
+
+    /* herosection */
+    ._ui_user_credit_header_details_title {
+        font-size: 45px;
+        max-width: 100%;
+    }
+
+    ._ui_user_credit_header_details_para {
+        max-width: 98%;
+        margin-bottom: 55px;
+    }
+
+    /* UI User service section */
+    ._ui_user_credit_services_content_title {
+        max-width: 60%;
+        font-size: 39px;
+    }
+
+    ._ui_user_credit_services_content_para {
+        max-width: 38%;
+    }
+}
+@media (max-width:991px) {
+    ._ui_user_credit_header_nav_wrapper_list {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin: 20px 0 0 0 !important;
+    }
+
+    ._ui_user_credit_header_nav_wrapper_item {
+        margin: 0 0 10px 0;
+    }
+
+    ._ui_user_credit_header_nav_form_btn {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    ._ui_user_credit_header_nav_login {
+        margin-right: 0;
+    }
+
+    ._ui_user_credit_header_nav_btn {
+        margin-top: 20px;
+    }
+
+    /* herosection */
+    ._ui_user_credit_header_wrap {
+        padding: 80px 0;
+    }
+
+    ._ui_user_credit_header_details_title {
+        font-size: 38px;
+        max-width: 100%;
+    }
+
+    ._ui_user_credit_header_details_para {
+        max-width: 100%;
+        margin-bottom: 50px;
+    }
+
+    ._ui_user_credit_header_bg_img {
+        margin-top: 70px;
+    }
+
+    /* UI User service section */
+    ._ui_user_credit_services_wrapper {
+        padding: 60px 0;
+    }
+
+    ._ui_user_credit_services_content_title {
+        max-width: 100%;
+        font-size: 28px;
+    }
+
+    ._ui_user_credit_services_content_para {
+        max-width: 100%;
+    }
+
+    ._ui_user_credit_services_content {
+        padding-bottom: 60px;
+    }
+
+    ._ui_user_credit_services_assessmnt_time_1 {
+        margin-bottom: 30px;
+    }
+
+    ._ui_user_credit_services_1_left_info_title {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    ._ui_user_credit_services_1_left_info_para {
+        max-width: 90%;
+        font-size: 17px;
+        margin-bottom: 25px;
+    }
+
+    ._ui_user_credit_services_details_1 {
+        padding: 20px 30px;
+    }
+
+    ._ui_user_credit_services_details_info_1 {
+        margin-bottom: 100px;
+    }
+
+    ._ui_user_credit_services_assessmnt_time_2 {
+        margin-bottom: 30px;
+    }
+
+    ._ui_user_credit_services_2_left_info_title {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    ._ui_user_credit_services_2_left_info_para {
+        max-width: 100%;
+        margin-bottom: 25px;
+        font-size: 17px;
+    }
+
+    ._ui_user_credit_services_details_2 {
+        padding: 20px 30px;
+    }
+
+    ._ui_user_credit_services_details_info_2 {
+        margin-bottom: 100px;
+    }
+
+    ._ui_user_credit_services_assessmnt_time_3 {
+        margin-bottom: 30px;
+    }
+
+    ._ui_user_credit_services_3_left_info_title {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    ._ui_user_credit_services_3_left_info_para {
+        max-width: 90%;
+        margin-bottom: 25px;
+        font-size: 17px;
+    }
+
+    ._ui_user_credit_services_details_3 {
+        padding: 20px 30px;
+    }
+
+    ._ui_user_credit_services_details_info_3 {
+        margin-bottom: 100px;
+    }
+
+    ._ui_user_credit_services_assessmnt_time_4 {
+        margin-bottom: 30px;
+    }
+
+    ._ui_user_credit_services_4_left_info_title {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    ._ui_user_credit_services_4_left_info_para {
+        max-width: 100%;
+        margin-bottom: 25px;
+        font-size: 17px;
+    }
+
+    ._ui_user_credit_services_details_4 {
+        padding: 20px 30px;
+    }
+
+    ._ui_user_credit_services_details_info_4 {
+        margin-bottom: 60px;
+    }
+
+    /* CTA */
+    ._ui_user_credit_CTA_content_title {
+        font-size: 35px;
+        max-width: 100%;
+    }
+
+    /* footer */
+    ._ui_user_credit_footer_logo_details {
+        margin-bottom: 45px;
+    }
+
+    ._ui_user_credit_footer_title {
+        margin-bottom: 23px;
+    }
+
+    ._ui_user_credit_footer_list_1,._ui_user_credit_footer_list_2{
+        margin-bottom: 50px;
+    }
+
+    ._ui_user_credit_footer_list_item {
+        margin-bottom: 19px;
+    }
+
+    ._ui_user_credit_footer_wrapper {
+        padding: 30px 0 60px 0;
+    }
+}
+
+@media (max-width:767px) {
+    ._ui_user_credit_header_nav_wrapper_list {
+        align-items: center;
+        justify-content: center;
+    }
+
+    ._ui_user_credit_header_nav_form_btn {
+        align-items: center;
+        justify-content: center;
+    }
+
+    ._ui_user_credit_header_nav_btn {
+        width: 140px;
+        height: 45px;
+        font-size: 17px;
+    }
+
+    /* herosection */
+    ._ui_user_credit_header_wrap {
+        padding: 50px 0;
+    }
+
+    ._ui_user_credit_header_details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    ._ui_user_credit_header_details_title {
+        font-size: 34px;
+        text-align: center;
+    }
+
+    ._ui_user_credit_header_details_para {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    /* UI User service section */
+    ._ui_user_credit_services_wrapper {
+        padding: 40px 0;
+    }
+
+    ._ui_user_credit_services_content_title {
+        max-width: 100%;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    ._ui_user_credit_services_content_para {
+        font-size: 16px;
+    }
+
+    ._ui_user_credit_services_content {
+        padding-bottom: 60px;
+        text-align: center;
+    }
+
+    ._ui_user_credit_services_assessmnt_time_1 {
+        margin-bottom: 20px;
+    }
+
+    ._ui_user_credit_services_assessmnt_time_1_title {
+        font-size: 15px;
+    }
+
+    ._ui_user_credit_services_1_left_info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    ._ui_user_credit_services_1_left_info_title {
+        margin-bottom: 20px;
+    }
+
+    ._ui_user_credit_services_1_left_info_para {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    ._ui_user_credit_services_1_right_bg_img {
+        margin-top: 40px;
+    }
+
+    ._ui_user_credit_services_details_info_1 {
+        margin-bottom: 80px;
+    }
+
+    ._ui_user_credit_services_assessmnt_time_2 {
+        margin-bottom: 20px;
+    }
+
+    ._ui_user_credit_services_assessmnt_time_2_title {
+        font-size: 15px;
+    }
+
+    ._ui_user_credit_services_2_left_info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0;
+        margin-top: 30px;
+    }
+
+    ._ui_user_credit_services_2_left_info_title {
+        margin-bottom: 20px;
+    }
+
+    ._ui_user_credit_services_2_left_info_para {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    ._ui_user_credit_services_details_info_2 {
+        margin-bottom: 80px;
+    }
+
+    ._ui_user_credit_services_details_2 {
+        padding: 30px;
+    }
+
+    ._ui_user_credit_services_assessmnt_time_3 {
+        margin-bottom: 20px;
+    }
+
+    ._ui_user_credit_services_assessmnt_time_3_title {
+        font-size: 15px;
+    }
+
+    ._ui_user_credit_services_3_left_info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    ._ui_user_credit_services_3_left_info_title {
+        margin-bottom: 20px;
+    }
+
+    ._ui_user_credit_services_3_left_info_para {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    ._ui_user_credit_services_3_right_bg_img {
+        margin-top: 40px;
+    }
+
+    ._ui_user_credit_services_details_info_3 {
+        margin-bottom: 80px;
+    }
+
+    ._ui_user_credit_services_assessmnt_time_4 {
+        margin-bottom: 20px;
+    }
+
+    ._ui_user_credit_services_assessmnt_time_4_title {
+        font-size: 15px;
+    }
+
+    ._ui_user_credit_services_4_left_info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0;
+        margin-top: 30px;
+    }
+
+    ._ui_user_credit_services_4_left_info_title {
+        margin-bottom: 20px;
+    }
+
+    ._ui_user_credit_services_4_left_info_para {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    ._ui_user_credit_services_details_info_4 {
+        margin-bottom: 10px;
+    }
+
+    ._ui_user_credit_services_details_4 {
+        padding: 30px;
+    }
+
+    /* CTA */
+    ._ui_user_credit_CTA_wrapper {
+        padding: 60px 0 50px 0;
+    }
+
+    ._ui_user_credit_CTA_content {
+        padding: 60px 30px;
+    }
+
+    ._ui_user_credit_CTA_content_btn_link {
+        width: 170px;
+        height: 59px;
+    }
+
+    /* footer */
+    ._ui_user_credit_footer_title {
+        margin-bottom: 20px;
+    }
+    ._ui_user_credit_footer_list_item {
+        margin-bottom: 12px;
+    }
+
+    ._ui_user_credit_footer_wrapper {
+        padding: 30px 0;
+    }
+
+    ._ui_user_credit_footer_logo_img {
+        max-width: 24%;
+    }
+}
+
+@media (max-width:575px) {
+
+    /* herosection */
+    ._ui_user_credit_header_details_title {
+        font-size: 30px;
+    }
+
+    ._ui_user_credit_header_details_btn_link {
+        width: 160px;
+        height: 50px;
+        font-size: 17px;
+    }
+
+    ._ui_user_credit_header_details_para {
+        margin-bottom: 40px;
+    }
+
+    ._ui_user_credit_header_bg_img {
+        margin-top: 60px;
+    }
+
+    /* UI User service section */
+    ._ui_user_credit_services_assessmnt_time_1_title,
+    ._ui_user_credit_services_assessmnt_time_2_title,
+    ._ui_user_credit_services_assessmnt_time_3_title,
+    ._ui_user_credit_services_assessmnt_time_4_title {
+        text-align: center;
+    }
+
+    ._ui_user_credit_services_assessmnt_time_1_title {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    ._ui_user_credit_services_assessmnt_time_2_title {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    ._ui_user_credit_services_assessmnt_time_3_title {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    ._ui_user_credit_services_assessmnt_time_4_title {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    /* CTA */
+    ._ui_user_credit_CTA_content {
+        padding: 40px 20px;
+    }
+
+    ._ui_user_credit_CTA_content_btn_link {
+        font-size: 16px;
+        width: 161px;
+        height: 50px;
+    }
+
+    ._ui_user_credit_CTA_content_title {
+        font-size: 26px;
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width:420px) {
+    ._ui_user_credit_header_nav_wrapper_item_link {
+        font-size: 15px;
+    }
+
+    ._ui_user_credit_header_nav_login {
+        font-size: 15px;
+    }
+
+    ._ui_user_credit_header_nav_btn {
+        width: 130px;
+        height: 43px;
+        font-size: 16px;
+    }
+
+    /* herosection */
+    ._ui_user_credit_header_details_title {
+        font-size: 25px;
+    }
+
+    ._ui_user_credit_header_details_para {
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+
+    ._ui_user_credit_header_details_btn_link {
+        width: 140px;
+        height: 46px;
+        font-size: 16px;
+    }
+
+    ._ui_user_credit_header_wrapper {
+        padding: 0 0 40px;
+    }
+
+    /* UI User service section */
+    ._ui_user_credit_header_wrap {
+        padding: 50px 0 10px 0;
+    }
+
+    ._ui_user_credit_services_wrapper {
+        padding: 25px 0;
+    }
+
+    ._ui_user_credit_services_content_title {
+        font-size: 21px;
+    }
+
+    ._ui_user_credit_services_content_title {
+        font-size: 16px;
+    }
+
+    ._ui_user_credit_services_content_para {
+        font-size: 15px;
+    }
+
+    ._ui_user_credit_services_1_left_info_title {
+        font-size: 25px;
+        margin-bottom: 17px;
+    }
+
+    ._ui_user_credit_services_1_left_info_para {
+        max-width: 100%;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    ._ui_user_credit_services_2_left_info_title {
+        font-size: 25px;
+        margin-bottom: 17px;
+    }
+
+    ._ui_user_credit_services_2_left_info_para {
+        max-width: 100%;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    ._ui_user_credit_services_3_left_info_title {
+        font-size: 25px;
+        margin-bottom: 17px;
+    }
+
+    ._ui_user_credit_services_3_left_info_para {
+        max-width: 100%;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    ._ui_user_credit_services_4_left_info_title {
+        font-size: 25px;
+        margin-bottom: 17px;
+    }
+
+    ._ui_user_credit_services_4_left_info_para {
+        max-width: 100%;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    /* CTA */
+    ._ui_user_credit_CTA_wrapper {
+        padding: 20px 0 50px 0;
+    }
+
+    ._ui_user_credit_CTA_content {
+        padding: 60px 0;
+    }
+
+    ._ui_user_credit_CTA_content_title {
+        font-size: 29px;
+    }
+
+    ._ui_user_credit_CTA_content_btn_link {
+        font-size: 16px;
+        width: 150px;
+        height: 50px;
+    }
+
+    ._credit_footer_list_item {
+        margin-bottom: 10px;
+    }
+
+    ._credit_footer_list_wrap {
+        margin-bottom: 50px;
+    }
+
+    ._credit_footer_logo {
+        font-size: 29px;
+    }
+
+    ._credit_footer_list_item_link,
+    ._credit_footer_pera {
+        font-size: 14px;
+    }
+
+    ._credit_footer_title {
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width:375px) {
+
+    /* herosection */
+    ._ui_user_credit_header_details_title {
+        font-size: 22px;
+    }
+
+    /* UI User service section */
+    ._ui_user_credit_services_1_left_info_para {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    ._ui_user_credit_services_1_left_info_title {
+        font-size: 24px;
+        margin-bottom: 13px;
+    }
+    ._ui_user_credit_services_2_left_info_para {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    ._ui_user_credit_services_2_left_info_title {
+        font-size: 24px;
+        margin-bottom: 13px;
+    }
+    ._ui_user_credit_services_3_left_info_para {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    ._ui_user_credit_services_3_left_info_title {
+        font-size: 24px;
+        margin-bottom: 13px;
+    }
+    ._ui_user_credit_services_4_left_info_para {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    ._ui_user_credit_services_4_left_info_title {
+        font-size: 24px;
+        margin-bottom: 13px;
+    }
+    /* CTA */
+    ._ui_user_credit_CTA_content_title {
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+
+    ._ui_user_credit_CTA_content {
+        padding: 50px 0;
+    }
+
+    ._works_footer_pera {
+        font-size: 15px;
+    }
+}
+
+/* variable */
+:root {
+    --bg1: #000000;
+    --bg2: #FFFFFF;
+    --bg3: #1F212D;
+    --bg4: #137AF4;
+    --bg5: #15161A;
+    --bg6: #E92C81;
+    --bg7: #E9B258;
+    --bg8: #5FCFFF;
+    --bg9: #C4F85C;
+    --color1: #B2B9C2;
+    --color2: #9A77FE;
+    --color3: #FFFFFF;
+    --color4: #137AF4;
+}

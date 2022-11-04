@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-color: var(--bg1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    box-shadow: none !important;
+}
+
+/* login form */
+._login_credit_wrapper{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+._login_title {
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 1.2;
+    text-align: center;
+    color:var(--color3);
+    margin-bottom: 32px;
+}
+
+._login_credit_form {
+    background:var(--bg2);
+    border-radius: 12px;
+    padding: 52px 170px;
+}
+
+._login_credit_form_title {
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.2;
+    color:var(--color4);
+    margin-bottom: 8px;
+}
+
+._login_credit_form_para {
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    color:var(--color5);
+    margin-bottom: 24px;
+}
+
+._login_credit_form_google_btn {
+    position: relative;
+}
+
+._login_credit_form_google_btn_link {
+    width: 100%;
+    height: 44px;
+    background:var(--bg2);
+    border: 1px solid var(--color6) !important;
+    border-radius: 12px;
+    font-family: 'Work Sans';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    color:var(--bg4) !important;
+}
+
+._login_credit_form_google_svg_icon {
+    max-width: 28px;
+    position: absolute;
+    top: 8%;
+    left: 20%;
+    transform: translate(-50%, 0);
+}
+
+._login_credit_form_smtitle {
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    color:var(--color5);
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+
+
+._login_credit_form_email_input {
+    margin-bottom: 16px;
+}
+
+._login_credit_form_email_input_title {
+    font-family: 'Work Sans';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    color:var(--color4);
+    margin-bottom: 8px;
+}
+
+::placeholder {
+    color:var(--color5);
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+._login_credit_form_input {
+    max-width: 100%;
+    height: 44px;
+    background:var(--bg2);
+    border: 1px solid var(--color6);
+    border-radius: 8px;
+    padding: 10px 10px 10px 16px;
+}
+
+._login_credit_form_password_input {
+    margin-bottom: 16px;
+    position: relative;
+}
+
+._login_credit_form_show_svg_icon {
+    position: absolute;
+    width: 20px;
+    height: 16px;
+    top: 41px;
+    right: 15px;
+}
+
+._login_credit_form_password_input_title {
+    font-family: 'Work Sans';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+    color:var(--color4);
+}
+
+.form-check-input {
+    border: 1.5px solid var(--color5) !important;
+}
+
+._login_credit_form_checkbox_btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+._login_credit_form_remember_title {
+    font-family: 'Work Sans';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    color:var(--color5);
+    margin-left: 6px;
+
+}
+
+._login_credit_form_forgot_link {
+    font-family: 'Work Sans';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: right;
+    color: var(--color4) !important;
+}
+
+._login_credit_form_login_btn {
+    display: block;
+
+}
+
+._login_credit_form_login_btn_link{
+    max-width: 100%;
+    height: 44px;
+    background-color:var(--bg4) !important;
+    border-radius: 8px;
+    font-family: 'Work Sans';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    color:var(--color3) !important;
+    border: 0;
+    outline: none !important;
+    transition: .2s all ease-in-out;
+}
+
+._login_credit_form_login_btn_link:hover {
+    background-color:var(--bg1) !important;
+    color: var(--color3) !important;
+}
+
+._login_credit_form_signup {
+    margin-top: 12px;
+}
+
+._login_credit_form_signup_title {
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    color:var(--color5);
+}
+
+._login_credit_form_signup_link {
+    font-family: 'Work Sans';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    color:var(--bg4) !important;
+}
+
+.form-check-input:checked[type=checkbox] {
+    background-image: url("../image/checkmark.svg");
+}
+
+.form-check-input:checked {
+    background-color: transparent;
+}
+
+
+/* responsive */
+@media (max-width:1199px) {
+
+}
+
+@media (max-width:991px) {
+    
+}
+
+@media (max-width:767px) {
+    ._login_credit_form {
+        padding: 20px;
+    }
+
+    ._login_credit_form_title {
+        font-size: 25px;
+    }
+
+    ._login_title {
+        font-size: 42px;
+        margin-bottom: 10px;
+    }
+    ._login_credit_form_google_svg_icon {
+        left: 15%;
+    }
+}
+
+@media (max-width:575px) {
+    
+    ._login_title {
+        font-size: 35px;
+    }
+
+    ._login_credit_form_title {
+        font-size: 22px;
+    }
+
+    ._login_credit_form_para {
+        font-size: 15px;
+        margin-bottom: 19px;
+    }
+
+    ._login_credit_form_google_btn_link {
+        font-size: 17px;
+    }
+
+    ._login_credit_form_login_btn_link {
+        font-size: 17px;
+    }
+}
+
+@media (max-width:420px) {
+    ._login_credit_form_title {
+        font-size: 19px;
+    }
+    ._login_credit_form_para {
+        font-size: 13px;
+        margin-bottom: 14px;
+    }
+    ._login_credit_form_forgot_link {
+        font-size: 14px;
+    }
+    ._login_credit_form_remember_title {
+        font-size: 14px;
+    }
+    ._login_credit_form_signup_title {
+        font-size: 14px;
+    }
+    ._login_credit_form_email_input_title {
+        font-size: 15px;
+    }
+
+    ._login_credit_form_password_input_title {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:375px) {}
+
+/* variable */
+:root {
+    --bg1: #000000;
+    --bg2: #FFFFFF;
+    --bg3: #1F212D;
+    --bg4: #137AF4;
+    --color1: #B2B9C2;
+    --color2: #9A77FE;
+    --color3: #FFFFFF;
+    --color4: #0A0A0A;
+    --color5: #A7A7AF;
+    --color6: #F2F2F2;
+}
